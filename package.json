@@ -1,0 +1,29 @@
+{
+  "name": "et9001",
+  "version": "1.0.0",
+  "description": "etlc big endian version jk lol wtfbbqz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insanity54/et9001.git"
+  },
+  "author": "Chris Grimmett <chris@grimtech.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/insanity54/et9001/issues"
+  },
+  "homepage": "https://github.com/insanity54/et9001#readme",
+  "devDependencies": {
+    "handlebars": "^4.0.5",
+    "metalsmith": "^2.1.0",
+    "metalsmith-assets": "^0.1.0",
+    "metalsmith-drafts": "0.0.1",
+    "metalsmith-flatten": "^0.2.0",
+    "metalsmith-layouts": "^1.4.4",
+    "metalsmith-markdown": "^0.2.1"
+  }
+}
