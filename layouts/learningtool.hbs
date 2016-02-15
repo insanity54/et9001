@@ -16,11 +16,14 @@
   </head>
   <body>
     <object width="{{toolWidth}}" height="{{toolHeight}}">
-        <param name="movie" value="swf/{{toolFile}}">
-        <embed src="swf/{{toolFile}}" width="{{toolWidth}}" height="{{toolHeight}}">
+        <param name="movie" value="{{baseurl}}swf/{{toolFile}}">
+        <embed src="{{baseurl}}swf/{{toolFile}}" width="{{toolWidth}}" height="{{toolHeight}}">
         </embed>
     </object>
 
+    {{#each navs.header as |nav|}}
+      <a href="{{../baseurl}}{{nav.path}}">../{{nav.file.title}}</a>
+    {{/each}}
     {{{contents}}}
 
 

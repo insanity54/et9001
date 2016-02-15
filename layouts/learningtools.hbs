@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{title}}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="stylesheet" href="assets/vendor.css"> -->
+
+  </head>
+  <body>
+
+    <p>BASE URL IS: {{baseurl}}</p>
+
+    {{! header navigation }}
+    {{#each navs.header as |nav|}}
+      <p>baseurl:{{baseurl}} navpath:{{nav.path}}</p>
+      <a href="{{../baseurl}}{{nav.path}}">{{#if nav.file.title}}{{nav.file.title}}{{else}}{{nav.name}}{{/if}}</a>
+    {{/each}}
+
+    {{{contents}}}
+
+    {{! learning tool index}}
+    {{ log navs.learningtools }}
+    <table>
+      <th>Identifier</th>
+      <th>Universal Resource Locator (URL)</th>
+    {{#each navs.learningtools as |nav|}}
+      {{#each nav.children as |n|}}
+      <tr>
+        <td>{{n.name}}</td>
+        <td><a href="{{../../baseurl}}{{n.path}}">{{n.path}}</a></td>
+      </tr>
+      {{/each}}
+    {{/each}}
+  </table>
+
+    <!-- <script src="assets/vendor.js"></script> -->
+  </body>
+</html>

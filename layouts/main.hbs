@@ -12,6 +12,12 @@
   </head>
   <body>
 
+    <p>BAES URL IS: {{baseurl}}</p>
+
+    {{#each navs.header as |nav|}}
+      <a href="{{baseurl}}{{nav.path}}">{{nav.name}}</a>
+    {{/each}}
+
     {{{contents}}}
 
     <!-- <script src="assets/vendor.js"></script> -->

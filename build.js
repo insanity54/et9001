@@ -8,6 +8,7 @@ var drafts = require('metalsmith-drafts');
 var layouts = require('metalsmith-layouts');
 //var flatten = require('metalsmith-flatten');
 var assets = require('metalsmith-assets');
+var nav = require('metalsmith-navigation');
 
 
 var metalsmith = Metalsmith(__dirname)
@@ -16,6 +17,18 @@ var metalsmith = Metalsmith(__dirname)
     gfm: true,
     smartypants: true
   }))
+  .use(nav({
+      header: {
+        pathProperty: 'navPath',
+        filterProperty: 'navGroup',
+        includeDirs: true
+      },
+      learningtools: {
+        pathProperty: 'navPath',
+        filterProperty: 'navGroup',
+        includeDirs: true
+      },
+    }, {}))
   .use(layouts({
     engine: 'handlebars',
     default: 'learningtool.hbs'
