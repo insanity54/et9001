@@ -3,8 +3,8 @@ baseurl: ../
 date: 2016-02-14
 categories: physics math science cognition
 toolFile: amberial.swf
-toolWidth: 500
-toolHeight: 350
+toolWidth: 800
+toolHeight: 600
 layout: learningtool.hbs
 navGroup: learningtools
 ---

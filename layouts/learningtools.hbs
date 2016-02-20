@@ -12,18 +12,14 @@
   </head>
   <body>
 
-    <p>BASE URL IS: {{baseurl}}</p>
-
     {{! header navigation }}
     {{#each navs.header as |nav|}}
-      <p>baseurl:{{baseurl}} navpath:{{nav.path}}</p>
       <a href="{{../baseurl}}{{nav.path}}">{{#if nav.file.title}}{{nav.file.title}}{{else}}{{nav.name}}{{/if}}</a>
     {{/each}}
 
     {{{contents}}}
 
     {{! learning tool index}}
-    {{ log navs.learningtools }}
     <table>
       <th>Identifier</th>
       <th>Universal Resource Locator (URL)</th>

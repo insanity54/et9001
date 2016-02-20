@@ -12,13 +12,18 @@
   </head>
   <body>
 
-    <p>BAES URL IS: {{baseurl}}</p>
-
     {{#each navs.header as |nav|}}
       <a href="{{baseurl}}{{nav.path}}">{{nav.name}}</a>
     {{/each}}
 
     {{{contents}}}
+
+    {{! flashy image of a toaster}}
+    <img src="{{baseurl}}img/learntoasteri2.jpg"
+      onmouseover="this.src='{{baseurl}}img/learntoasteri3.jpg'"
+      onmouseout="this.src='{{baseurl}}img/learntoasteri2.jpg'"
+    />
+
 
     <!-- <script src="assets/vendor.js"></script> -->
   </body>
