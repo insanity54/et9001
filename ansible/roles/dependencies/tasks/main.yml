@@ -1,0 +1,26 @@
+---
+- name: make sure python installed
+  raw: apt-get update && apt-get -y install python-pip
+
+- name: install python-pip
+  apt:
+    name: python-pip
+    state: present
+
+- name: install make
+  apt:
+    name: make
+    state: present
+
+- name: install git
+  apt:
+    name: git
+    state: present
+
+- name: install sudo
+  apt:
+    name: sudo
+    state: present
+
+- name: gather facts
+  setup:

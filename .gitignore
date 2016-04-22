@@ -36,3 +36,8 @@ build
 
 # swf assets are stored on S3
 assets/swf
+
+
+# contributed ansible roles
+ansible/roles/bootstrap
+ansible/roles/nginx
