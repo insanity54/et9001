@@ -4,7 +4,7 @@ baseurl: ../
 date: 2016-02-20
 categories: cognition communication
 toolFile: car_park_chaos.swf
-toolWidth: 800
-toolHeight: 600
+toolWidth: 380
+toolHeight: 1000
 navGroup: learningtools
 ---
