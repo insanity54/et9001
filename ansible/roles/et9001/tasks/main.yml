@@ -1,0 +1,8 @@
+---
+
+ - name: make serve dir on remote
+   file: path=/srv/www/extremetoaster mode=0755 state=directory owner=root group=root
+
+ - name: copy extremetoaster build to remote
+   synchronize: src={{sourcedir}}/build/ dest=/srv/www/extremetoaster archive=no recursive=yes
+   tags: deploy
