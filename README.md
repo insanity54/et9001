@@ -1,4 +1,7 @@
 # et9001
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/insanity54/et9001.svg)](https://greenkeeper.io/)
+
 ETLC big endian version jk lol wtfbbqz
 
 et website
